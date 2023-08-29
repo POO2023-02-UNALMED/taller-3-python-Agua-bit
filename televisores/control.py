@@ -13,11 +13,11 @@ class Control:
     def setTv(self, tv):
         self.tv = tv
 
-    def turnOn(self, estado: bool):
-        self.tv._estado = True
+    def turnOn(self):
+        self.tv.turnOn()
 
-    def turnOff(self, estado: bool):
-        self.tv._estado = False
+    def turnOff(self):
+        self.tv.turnOff()
 
     def canalUp(self):
         self.tv.canalUp()

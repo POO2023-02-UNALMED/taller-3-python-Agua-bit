@@ -1,6 +1,6 @@
-import tv
+from televisores.tv import tv
 
-class Control:
+class Control():
 
     tv = tv
     

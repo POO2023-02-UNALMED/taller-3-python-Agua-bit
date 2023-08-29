@@ -1,5 +1,5 @@
-import Marca
-import Control
+from televisores.marca import Marca
+from televisores.control import Control
 
 class Tv():
 

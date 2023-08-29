@@ -62,17 +62,17 @@ class TV:
         return self._estado
     
     def canalUp(self):
-        if (self._estado == True and 1 <= self._canal and self._canal < 120):
+        if self._estado == True and 1 <= self._canal < 120:
             self._canal += 1
 
     def canalDown(self):
-        if (self._estado == True and 1 < self._canal and self._canal < 120):
+        if self._estado == True and 1 < self._canal <= 120:
             self._canal -= 1
 
     def volumenUp(self):
-        if (self._estado == True and  0 < self._volumen and self._volumen < 7):
+        if self._estado == True and  0 <= self._volumen and self._volumen < 7:
             self._volumen += 1
 
     def volumenDown(self):
-        if (self._estado == True and 0 < self._volumen and self._volumen < 7):
+        if self._estado == True and 0 < self._volumen and self._volumen <= 7:
             self._volumen -= 1

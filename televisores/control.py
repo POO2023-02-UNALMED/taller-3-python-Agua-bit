@@ -5,7 +5,7 @@ class Control:
 
     def enlazar(self, tv):
         self.tv = tv
-        self.tv.setControl(self)
+        tv.setControl(self)
 
     def getTv(self):
         return self.tv
@@ -14,39 +14,25 @@ class Control:
         self.tv = tv
 
     def turnOn(self, estado: bool):
-        self.tv.estado = True
+        self.tv._estado = True
 
     def turnOff(self, estado: bool):
-        self.tv.estado = False
+        self.tv._estado = False
 
     def canalUp(self):
-        if self.tv.estado == True:
-            if 1 <= self.tv.canal and self.tv.canal <= 120:
-                self.tv.canal += 1
+        self.tv.canalUp(self)
 
     def canalDown(self):
-        if self.tv.estado == True:
-            if 1 <= self.tv.canal and self.tv.canal <= 120:
-                self.tv.canal -= 1
+        self.tv.canalDown(self)
 
     def volumenUp(self):
-        if self.tv.estado == True:
-            if 0 <= self.tv.volumen and self.tv.volumen <= 7:
-                self.tv.volumen += 1
+        self.tv.volumenUp(self)
 
     def volumenDown(self):
-        if self.tv.estado == True:
-            if 0 <= self.tv.volumen and self.tv.volumen <= 7:
-                self.tv.volumen -= 1
+        self.tv.volumenDown(self)
 
     def setCanal(self, canal: int):
-        if self.tv.estado == True:
-            if 1 <= canal and canal <= 120:
-                if 1 <= self.tv.canal and self.tv.canal <= 120:
-                    self.tv.canal = canal
+        self.tv.setCanal(canal)
 
     def setVolumen(self, volumen: int):
-        if self.tv.estado == True:
-            if 0 <= volumen and volumen <= 7:
-                if 0 <= self.tv.volumen and self.tv.volumen <= 7:
-                    self.tv.volumen = volumen
+        self.tv.setVolumen(volumen)

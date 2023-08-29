@@ -1,6 +1,4 @@
-
-
-class TV():
+class TV:
 
     canal = 1
     volumen = 1
@@ -11,6 +9,7 @@ class TV():
     def __init__(self, marca: Marca, estado: bool):
         self.marca = marca
         self.estado = estado
+        numTV += 1
 
     def getMarca(self):
         return self.marca
@@ -58,13 +57,21 @@ class TV():
         return self.estado
     
     def canalUp(self):
-        self.canal += 1
+        if self.estado == True:
+            if 1 <= self.canal and self.canal <= 120:
+                self.canal += 1
 
     def canalDown(self):
-        self.canal -= 1
+        if self.estado == True:
+            if 1 <= self.canal and self.canal <= 120:
+                self.canal -= 1
 
     def volumenUp(self):
-        self.volumen += 1
+        if self.estado == True:
+            if 0 <= self.volumen and self.volumen <= 7:
+                self.volumen += 1
 
     def volumenDown(self):
-        self.volumen -= 1
+        if self.estado == True:
+            if 0 <= self.volumen and self.volumen <= 7:
+                self.volumen -= 1

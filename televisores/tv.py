@@ -35,7 +35,7 @@ class TV:
         return self._volumen
     
     def setVolumen(self, volumen):
-        if (self._estado == True and 0 <= self._volumen and self._volumen <= 7):
+        if self._estado == True and 0 <= self.volumen and self.volumen <= 7:
             self._volumen = volumen
 
     def getControl(self):

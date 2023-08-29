@@ -20,16 +20,16 @@ class Control:
         self.tv._estado = False
 
     def canalUp(self):
-        self.tv.canalUp(self)
+        self.tv.canalUp()
 
     def canalDown(self):
-        self.tv.canalDown(self)
+        self.tv.canalDown()
 
     def volumenUp(self):
-        self.tv.volumenUp(self)
+        self.tv.volumenUp()
 
     def volumenDown(self):
-        self.tv.volumenDown(self)
+        self.tv.volumenDown()
 
     def setCanal(self, canal: int):
         self.tv.setCanal(canal)

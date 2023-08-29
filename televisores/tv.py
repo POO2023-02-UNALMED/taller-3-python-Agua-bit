@@ -2,7 +2,6 @@
 
 class TV:
 
-    
     _numTV = 0
 
     def __init__(self, marca, estado: bool):
@@ -49,8 +48,8 @@ class TV:
         return cls._numTV
     
     @classmethod
-    def setNumTV(cls, num: int):
-        cls._numTV = num
+    def setNumTV(cls, _numTV):
+        cls._numTV = _numTV
 
     def turnOn(self):
         self._estado = True

@@ -50,8 +50,8 @@ class TV:
         return cls.numTV
     
     @classmethod
-    def setNumTV(cls):
-        cls.numTV += 1
+    def setNumTV(cls, num: int):
+        cls.numTV = num
 
     def turnOn(self):
         self.estado = True

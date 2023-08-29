@@ -1,4 +1,4 @@
-from televisores.tv import tv
+from .tv import tv
 
 class Control:
     

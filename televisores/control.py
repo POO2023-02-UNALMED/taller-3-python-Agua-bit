@@ -1,4 +1,4 @@
-from .tv import tv
+
 
 class Control:
     

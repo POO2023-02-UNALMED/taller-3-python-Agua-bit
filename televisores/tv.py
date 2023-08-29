@@ -1,3 +1,6 @@
+from televisores.control import Control
+
+
 class TV:
 
     canal = 1

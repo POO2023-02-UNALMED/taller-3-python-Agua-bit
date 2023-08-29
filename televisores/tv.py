@@ -1,6 +1,6 @@
 
 
-class Tv():
+class TV():
 
     canal = 1
     volumen = 1

@@ -10,7 +10,7 @@ class TV:
         self._precio = 500 
         self._marca = marca
         self._estado = estado
-        self._numTV += 1
+        TV._numTV += 1
 
     def getMarca(self):
         return self._marca

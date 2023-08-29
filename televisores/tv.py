@@ -7,8 +7,7 @@ class TV:
     def __init__(self, marca, estado: bool):
         self._canal = 1
         self._volumen = 1
-        self._precio = 500
-        self._control : Control 
+        self._precio = 500 
         self._marca = marca
         self._estado = estado
         self._numTV += 1
